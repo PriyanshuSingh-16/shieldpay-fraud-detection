@@ -1,0 +1,100 @@
+Build me a full-stack web application named "ShieldPay" that detects UPI-based money laundering using AI and steganography detection in QR codes. Structure the app into the following major components:
+
+🧠 1. Backend (Python Flask or Node.js preferred):
+Set up REST API routes for:
+
+/upload-qr – accepts an image file of a QR code, detects steganography using a CNN or LSB decoder, and returns the risk classification (safe/suspicious/high-risk).
+
+/analyze-transactions – accepts a JSON list of mock UPI transactions, analyzes patterns using ML (e.g., smurfing, mule accounts, flash laundering).
+
+/flag-account – flags a UPI wallet or merchant ID based on abnormal behavior.
+
+/admin/alerts – returns flagged QR codes and suspicious UPI activity for the dashboard.
+
+Integrate MongoDB to store:
+
+Transaction logs
+
+QR metadata
+
+User/device metadata
+
+Flags and alerts
+
+Implement basic JWT-based auth for the admin panel.
+
+🖼️ 2. QR Code Steganography Detection:
+Use Python + OpenCV + TensorFlow/Keras to:
+
+Train or load a CNN model to detect LSB steganography in QR codes.
+
+Preprocess the uploaded image.
+
+Output classification: "clean", "steganographic", "phishing".
+
+Also implement a traditional LSB decoder fallback for low-end images.
+
+📊 3. Transaction Analyzer (AI Fraud Detection):
+Use scikit-learn/XGBoost to:
+
+Load a synthetic or uploaded dataset of UPI transactions (fields: sender ID, receiver ID, amount, timestamp, device ID, geo-IP).
+
+Analyze patterns like:
+
+Too many small transactions from one sender to many receivers (smurfing).
+
+Fast circular transfers (flash laundering).
+
+Multiple wallets on same IP/device (mule networks).
+
+Output: Suspicion Score + Description.
+
+Support CSV or JSON uploads for testing the model.
+
+🖥️ 4. Admin Dashboard (React + Tailwind CSS):
+Visual cards for:
+
+Steganographic QR code detections
+
+Most flagged UPI wallets
+
+Daily/weekly laundering attempts
+
+Interactive graph visualization using D3.js or Chart.js:
+
+Transaction flow diagrams
+
+Node-based laundering ring detection
+
+Include login system and data filters (by date, risk score, wallet ID).
+
+📦 5. Dataset (Simulated for Hackathon):
+Create mock UPI transaction data:
+
+1000 normal transactions
+
+50 suspicious ones (e.g., flash transactions, same IP, strange hours)
+
+Create 50 QR codes:
+
+30 normal
+
+10 with LSB steganography (encode "redirect VPA")
+
+10 phishing redirections
+
+⚙️ Project Features Recap:
+QR scanner with stego detection
+
+AI fraud detection on UPI data
+
+Dashboard with visualizations
+
+MongoDB data store
+
+Flask or Node.js backend
+
+Secure login/auth
+
+Scalable API endpoints
+
