@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(222, 84%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 8%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(222, 47%, 11%);
+  --secondary: hsl(217, 32%, 17%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 32%, 17%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(217, 32%, 17%);
+  --radius: 0.5rem;
+  --chart-1: hsl(217, 91%, 60%);
+  --chart-2: hsl(142, 76%, 36%);
+  --chart-3: hsl(47, 96%, 53%);
+  --chart-4: hsl(0, 84%, 60%);
+  --chart-5: hsl(270, 95%, 75%);
+  
+  /* Custom Shield Pay Colors */
+  --shield-primary: hsl(217, 91%, 60%);
+  --shield-secondary: hsl(215, 25%, 27%);
+  --shield-accent: hsl(45, 93%, 47%);
+  --shield-success: hsl(142, 76%, 36%);
+  --shield-danger: hsl(0, 84%, 60%);
+  --shield-warning: hsl(45, 93%, 47%);
+  --shield-background: hsl(222, 84%, 5%);
+  --shield-surface: hsl(217, 32%, 17%);
+  --shield-surface-light: hsl(215, 25%, 27%);
+}
+
+.dark {
+  --background: hsl(222, 84%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 8%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --primary: hsl(217, 91%, 60%);
+  --primary-foreground: hsl(222, 47%, 11%);
+  --secondary: hsl(217, 32%, 17%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --accent: hsl(217, 32%, 17%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --destructive: hsl(0, 63%, 31%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(217, 32%, 17%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased;
+    background-color: hsl(222, 84%, 5%);
+    color: hsl(210, 40%, 98%);
+  }
+}
+
+@layer components {
+  .shield-bg-primary {
+    background-color: var(--shield-primary);
+  }
+  
+  .shield-bg-surface {
+    background-color: var(--shield-surface);
+  }
+  
+  .shield-bg-surface-light {
+    background-color: var(--shield-surface-light);
+  }
+  
+  .shield-text-danger {
+    color: var(--shield-danger);
+  }
+  
+  .shield-text-success {
+    color: var(--shield-success);
+  }
+  
+  .shield-text-warning {
+    color: var(--shield-warning);
+  }
+  
+  .shield-border {
+    border-color: hsl(217, 32%, 17%);
+  }
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(217, 32%, 17%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(215, 25%, 27%);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(217, 91%, 60%);
+}
