@@ -89,34 +89,6 @@ export const insertFlaggedAccountSchema = createInsertSchema(flaggedAccounts).om
   flaggedAt: true,
 });
 
-// Relations
-export const usersRelations = relations(users, ({ many }) => ({
-  transactions: many(transactions),
-  alerts: many(alerts),
-  flaggedAccounts: many(flaggedAccounts),
-}));
-
-export const transactionsRelations = relations(transactions, ({ one }) => ({
-  sender: one(users, {
-    fields: [transactions.senderId],
-    references: [users.username],
-  }),
-}));
-
-export const alertsRelations = relations(alerts, ({ one }) => ({
-  user: one(users, {
-    fields: [alerts.accountId],
-    references: [users.username],
-  }),
-}));
-
-export const flaggedAccountsRelations = relations(flaggedAccounts, ({ one }) => ({
-  user: one(users, {
-    fields: [flaggedAccounts.accountId],
-    references: [users.username],
-  }),
-}));
-
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
 export type InsertTransaction = z.infer<typeof insertTransactionSchema>;
