@@ -1,0 +1,98 @@
+[
+  {
+    "senderId": "legitimate.user@paytm",
+    "receiverId": "coffee.shop@gpay",
+    "amount": "45.50",
+    "timestamp": "2024-06-15T08:30:15Z",
+    "deviceId": "DEV050",
+    "geoIp": "192.168.1.300"
+  },
+  {
+    "senderId": "smurfer@phonepe",
+    "receiverId": "account.a@upi",
+    "amount": "9800.00",
+    "timestamp": "2024-06-15T02:45:30Z",
+    "deviceId": "DEV051",
+    "geoIp": "192.168.1.301"
+  },
+  {
+    "senderId": "smurfer@phonepe",
+    "receiverId": "account.b@paytm",
+    "amount": "9850.00",
+    "timestamp": "2024-06-15T02:47:15Z",
+    "deviceId": "DEV051",
+    "geoIp": "192.168.1.301"
+  },
+  {
+    "senderId": "smurfer@phonepe",
+    "receiverId": "account.c@gpay",
+    "amount": "9900.00",
+    "timestamp": "2024-06-15T02:49:45Z",
+    "deviceId": "DEV051",
+    "geoIp": "192.168.1.301"
+  },
+  {
+    "senderId": "normal.customer@gpay",
+    "receiverId": "restaurant@upi",
+    "amount": "875.25",
+    "timestamp": "2024-06-15T19:20:30Z",
+    "deviceId": "DEV052",
+    "geoIp": "192.168.1.302"
+  },
+  {
+    "senderId": "circle.start@paytm",
+    "receiverId": "circle.mid@phonepe",
+    "amount": "50000.00",
+    "timestamp": "2024-06-15T03:10:20Z",
+    "deviceId": "DEV053",
+    "geoIp": "192.168.1.303"
+  },
+  {
+    "senderId": "circle.mid@phonepe",
+    "receiverId": "circle.end@upi",
+    "amount": "49500.00",
+    "timestamp": "2024-06-15T03:12:35Z",
+    "deviceId": "DEV054",
+    "geoIp": "192.168.1.304"
+  },
+  {
+    "senderId": "circle.end@upi",
+    "receiverId": "circle.start@paytm",
+    "amount": "49000.00",
+    "timestamp": "2024-06-15T03:14:50Z",
+    "deviceId": "DEV055",
+    "geoIp": "192.168.1.305"
+  },
+  {
+    "senderId": "regular.person@phonepe",
+    "receiverId": "grocery.mart@paytm",
+    "amount": "234.75",
+    "timestamp": "2024-06-15T14:45:20Z",
+    "deviceId": "DEV056",
+    "geoIp": "192.168.1.306"
+  },
+  {
+    "senderId": "high.volume@gpay",
+    "receiverId": "split.a@upi",
+    "amount": "8999.00",
+    "timestamp": "2024-06-15T01:15:30Z",
+    "deviceId": "DEV057",
+    "geoIp": "192.168.1.307"
+  },
+  {
+    "senderId": "high.volume@gpay",
+    "receiverId": "split.b@paytm",
+    "amount": "8999.00",
+    "timestamp": "2024-06-15T01:17:45Z",
+    "deviceId": "DEV057",
+    "geoIp": "192.168.1.307"
+  },
+  {
+    "senderId": "student@phonepe",
+    "receiverId": "tuition.center@gpay",
+    "amount": "3500.00",
+    "timestamp": "2024-06-15T16:30:15Z",
+    "deviceId": "DEV058",
+    "geoIp": "192.168.1.308"
+  }
+]

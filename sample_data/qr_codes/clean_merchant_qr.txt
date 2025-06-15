@@ -1,0 +1,10 @@
+QR Code Type: Legitimate Merchant Payment
+UPI ID: merchant.store@paytm
+Merchant Name: ABC Electronics Store
+Amount: 1500.00
+Transaction Note: Purchase of smartphone
+Risk Level: Clean
+Expected Analysis: No steganography detected, normal payment QR code
+
+This file represents a clean QR code that should be classified as 'clean' by the system.
+To test: Upload this file (rename to .png or .jpg) in the QR Scanner section.

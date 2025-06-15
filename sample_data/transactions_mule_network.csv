@@ -1,0 +1,14 @@
+senderId,receiverId,amount,timestamp,deviceId,geoIp
+mule.controller@paytm,mule.acc1@gpay,15000.00,2024-06-15T05:10:15Z,DEV040,192.168.1.250
+mule.controller@paytm,mule.acc2@phonepe,15000.00,2024-06-15T05:12:30Z,DEV040,192.168.1.250
+mule.controller@paytm,mule.acc3@upi,15000.00,2024-06-15T05:14:45Z,DEV040,192.168.1.250
+mule.controller@paytm,mule.acc4@gpay,15000.00,2024-06-15T05:16:00Z,DEV040,192.168.1.250
+mule.controller@paytm,mule.acc5@phonepe,15000.00,2024-06-15T05:18:15Z,DEV040,192.168.1.250
+mule.controller@paytm,mule.acc6@upi,15000.00,2024-06-15T05:20:30Z,DEV040,192.168.1.250
+mule.acc1@gpay,final.target@paytm,14500.00,2024-06-15T06:10:15Z,DEV041,192.168.1.251
+mule.acc2@phonepe,final.target@paytm,14500.00,2024-06-15T06:12:30Z,DEV041,192.168.1.251
+mule.acc3@upi,final.target@paytm,14500.00,2024-06-15T06:14:45Z,DEV041,192.168.1.251
+network.head@gpay,node.a@paytm,8000.00,2024-06-15T07:20:10Z,DEV042,192.168.1.260
+network.head@gpay,node.b@phonepe,8000.00,2024-06-15T07:22:25Z,DEV042,192.168.1.260
+network.head@gpay,node.c@upi,8000.00,2024-06-15T07:24:40Z,DEV042,192.168.1.260
+network.head@gpay,node.d@paytm,8000.00,2024-06-15T07:26:55Z,DEV042,192.168.1.260
