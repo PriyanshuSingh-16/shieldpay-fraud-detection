@@ -157,7 +157,11 @@ export class MemStorage implements IStorage {
       ...insertAlert,
       id,
       createdAt: new Date(),
-      acknowledged: false
+      acknowledged: false,
+      riskScore: insertAlert.riskScore ?? null,
+  metadata: insertAlert.metadata ?? {},
+  status: insertAlert.status ?? null,
+  accountId: insertAlert.accountId ?? null,
     };
     this.alerts.set(id, alert);
     return alert;
@@ -184,8 +188,10 @@ export class MemStorage implements IStorage {
       ...insertFlaggedAccount,
       id,
       flaggedAt: new Date(),
-      reviewedAt: null,
-      reviewedBy: null
+  reviewedAt: null,
+  reviewedBy: null,
+  metadata: insertFlaggedAccount.metadata ?? {},
+  status: insertFlaggedAccount.status ?? null,
     };
     this.flaggedAccounts.set(id, flaggedAccount);
     return flaggedAccount;
