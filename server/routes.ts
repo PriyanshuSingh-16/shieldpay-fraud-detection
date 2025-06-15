@@ -7,6 +7,13 @@ import { authService } from "./services/auth";
 import { qrAnalysisService } from "./services/qrAnalysis";
 import { transactionAnalysisService } from "./services/transactionAnalysis";
 import { insertTransactionSchema, insertQRCodeSchema, insertAlertSchema, insertFlaggedAccountSchema } from "@shared/schema";
+import { User } from "@shared/schema";
+
+declare module "express-serve-static-core" {
+  interface Request {
+    user?: User;
+  }
+}
 
 const upload = multer({ 
   storage: multer.memoryStorage(),
