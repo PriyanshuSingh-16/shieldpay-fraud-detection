@@ -1,0 +1,7 @@
+QR Code Type: Fake Banking QR Code
+UPI ID: sbi.fake@scam.com
+Merchant Name: State Bank of India (FAKE)
+Amount: 10000.00
+Transaction Note: Account reactivation fee
+Risk Level: High-Risk
+Expected Analysis: Phishing detected, fake banking domain

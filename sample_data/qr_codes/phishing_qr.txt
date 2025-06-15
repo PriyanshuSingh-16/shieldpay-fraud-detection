@@ -1,0 +1,10 @@
+QR Code Type: High-Risk Phishing Attempt
+UPI ID: phishing.scam@fake.domain
+Merchant Name: Fake Bank Official
+Amount: 49999.00
+Transaction Note: Account verification fee - URGENT
+Risk Level: High-Risk
+Expected Analysis: LSB steganography detected, phishing patterns identified
+
+This file represents a high-risk QR code that should trigger critical alerts.
+To test: Upload this file (rename to .png or .jpg) in the QR Scanner section.

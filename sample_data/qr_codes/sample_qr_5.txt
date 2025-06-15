@@ -1,0 +1,7 @@
+QR Code Type: Normal Gas Station Payment
+UPI ID: petrol.pump@gpay
+Merchant Name: Shell Gas Station
+Amount: 2500.00
+Transaction Note: Fuel payment
+Risk Level: Clean
+Expected Analysis: Clean QR code, no security concerns

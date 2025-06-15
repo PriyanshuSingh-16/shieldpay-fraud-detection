@@ -1,0 +1,10 @@
+QR Code Type: Suspicious Payment Request
+UPI ID: suspicious@tempmail.com
+Merchant Name: Unknown Vendor
+Amount: 9999.00
+Transaction Note: Urgent payment required
+Risk Level: Suspicious
+Expected Analysis: Potential steganography, suspicious patterns detected
+
+This file represents a suspicious QR code that should trigger medium-risk alerts.
+To test: Upload this file (rename to .png or .jpg) in the QR Scanner section.

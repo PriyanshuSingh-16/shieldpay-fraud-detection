@@ -1,0 +1,9 @@
+QR Code Type: Normal Restaurant Payment
+UPI ID: taj.restaurant@paytm
+Merchant Name: Taj Restaurant
+Amount: 750.50
+Transaction Note: Dinner for 4 people
+Risk Level: Clean
+Expected Analysis: No steganography detected, legitimate business QR code
+
+This file represents a normal restaurant QR code - should be classified as 'clean'.

@@ -1,0 +1,7 @@
+QR Code Type: Legitimate Online Payment
+UPI ID: amazon.payments@upi
+Merchant Name: Amazon India
+Amount: 1299.00
+Transaction Note: Order #AMZ123456789
+Risk Level: Clean
+Expected Analysis: Clean QR code, verified merchant

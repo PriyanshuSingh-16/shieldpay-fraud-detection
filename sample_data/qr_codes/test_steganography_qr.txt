@@ -1,0 +1,9 @@
+QR Code Type: Test Steganography Detection
+UPI ID: test.stego@example.com
+Merchant Name: Test Merchant
+Amount: 5000.00
+Transaction Note: Testing LSB detection
+Risk Level: Suspicious
+Expected Analysis: Steganographic content detected via LSB analysis
+
+This file should trigger steganography detection algorithms.
